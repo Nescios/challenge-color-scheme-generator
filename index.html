@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./style.css">
+  <title>Color Scheme Generator</title>
+</head>
+<body>
+  <main class="generator-container">
+
+    <!-- Top container -->
+    <div class="header-container">
+      <form>
+        <input type="color" id="color-input" name="color-input" class="color-input">
+        <div id="select-wrapper">
+          <select id="select-color-scheme" name="select-color-scheme" class="select-color-scheme">
+            <option value="monochrome">Monochrome</option>
+            <option value="monochrome-dark">Monochrome dark</option>
+            <option value="monochrome-light">Monochrome light</option>
+            <option value="analogic">Analogic</option>
+            <option value="complement">Complement</option>
+            <option value="analogic-complement">Analogic complement</option>
+            <option value="triad">Triad</option>
+            <option value="quad">Quad</option>
+          </select>
+        </div>
+        <button id="get-color-btn" class="get-color-btn">Get color scheme</button>
+        </form>
+    </div>
+
+    <!-- Color strip container -->
+    <div class="color-strip-container">
+      <button class="color-strip">
+        <div class="color-block"></div>
+        <div class="color-name"></div>
+      </button>
+      <button class="color-strip">
+        <div class="color-block"></div>
+        <div class="color-name"></div>
+      </button>
+      <button class="color-strip">
+        <div class="color-block"></div>
+        <div class="color-name"></div>
+      </button>
+      <button class="color-strip">
+        <div class="color-block"></div>
+        <div class="color-name"></div>
+      </button>
+      <button class="color-strip">
+        <div class="color-block"></div>
+        <div class="color-name"></div>
+      </button>
+    </div>
+  </main>
+
+  <script src="./index.js"></script>
+</body>
+</html>
